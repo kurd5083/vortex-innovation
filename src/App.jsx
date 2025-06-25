@@ -14,6 +14,8 @@ import { openModal } from './store/slices/modalSlice';
 
 function App() {
   const gamesData = useSelector((state) => state.gamesData.games);
+  const sortType = useSelector((state) => state.gamesData.sortType);
+  const filterType = useSelector((state) => state.gamesData.filterType);
   const stateModal = useSelector((state) => state.modal.stateModal);
   const dispatch = useDispatch();
 
@@ -40,10 +42,9 @@ function App() {
         {gamesData.map((item) => (
          
           <motion.div
-          
+            key={`${item.id}-${filterType}-${sortType}`}
             className={style.game_card} 
             onClick={() => dispatch(openModal(item.id))}
-            key={item.animationKey}
             variants={{
               hidden: { y: 30, opacity: 0, scale: 0.95 },
               visible: {

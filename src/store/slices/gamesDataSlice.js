@@ -198,10 +198,7 @@ function applyFiltersAndSort(state) {
 			state.sortType === 'asc' ? a.rating - b.rating : b.rating - a.rating
 		);
 	}
-	filteredGames = filteredGames.map(game => ({
-		...game,
-		animationKey: `${game.id}-${state.filterType}-${state.sortType}`,
-	}));
+
 	state.games = filteredGames;
 }
 
