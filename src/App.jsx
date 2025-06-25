@@ -38,10 +38,12 @@ function App() {
         }}
       >
         {gamesData.map((item) => (
+         
           <motion.div
+          
             className={style.game_card} 
             onClick={() => dispatch(openModal(item.id))}
-            key={item.id}
+            key={item.animationKey}
             variants={{
               hidden: { y: 30, opacity: 0, scale: 0.95 },
               visible: {
@@ -55,7 +57,7 @@ function App() {
               y: -8,
               transition: { duration: 0.2 },
             }}
-          >
+          > 
             <GameCard
               title={item.title}
               cover={item.cover}
