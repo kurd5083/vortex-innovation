@@ -1,0 +1,49 @@
+:root {
+  --neon-blue: #0ff0fc;
+  --neon-pink: #ff2a6d;
+  --neon-purple: #d300c5;
+  --dark-bg: #0c0c1a;
+  --darker-bg: #050510;
+  --text-primary: #e0e0e0;
+  --text-secondary: #b0b0b0;
+  --glow: 0 0 10px rgba(0, 255, 252, 0.8);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Rajdhani', sans-serif;
+  background-color: var(--dark-bg);
+  color: var(--text-primary);
+
+}
+
+body::-webkit-scrollbar {
+  width: 6px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #4646464D;
+  border-radius: 4px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #464646CC;
+  border-radius: 4px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}

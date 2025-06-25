@@ -1,0 +1,29 @@
+.footer {
+	text-align: center;
+	padding: 60px 0px;
+	margin-top: 20px;
+	background: linear-gradient(to top, rgba(5, 5, 16, 0.9) 0%, transparent 100%);
+
+	.footer_text {
+		padding: 0px 20px;
+		line-height: 140%;
+	}
+}
+
+@media (max-width: 768px) {
+	.footer {
+		.footer_text {
+			font-size: 14px;
+		}
+	}
+}
+
+@media (max-width: 540px) {
+	.footer {
+		padding: 40px 0;
+
+		.footer_text {
+			font-size: 12px;
+		}
+	}
+}
